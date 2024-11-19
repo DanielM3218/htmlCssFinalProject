@@ -1,0 +1,49 @@
+
+*{
+    border: 1px black solid;
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    
+    .nav-container{
+        height: 7vh;
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        justify-content:space-between;
+        background-color: black;
+        color: white;
+    }
+
+    .headline{
+        width: 50vw;
+    }
+
+    #logo{
+        color: white;
+        margin-bottom: 2px;
+    }
+
+    .navbar{
+        margin-top: 5px ;
+        width: 50vw;
+
+    }
+
+    .video-container {
+        width: 100%; /* Full screen width */
+        margin-top: 7vh;
+        height: 30%;
+        position: relative;
+        background-color: black; /* Placeholder if video fails to load */
+        overflow: hidden;
+    }
+    
+    .video-container video {
+        width: 100vh;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+}
