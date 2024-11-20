@@ -24,7 +24,7 @@
     }
 
     #logo{
-        color: white;
+        color: #ffffff;
         margin-bottom: 2px;
     }
 
@@ -142,8 +142,32 @@
     }
 
     .about-container{
+        display: flex;
         height: 15vh;
         width: 100vw;
         background-color: black;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .icon{
+        height: 30px;
+        width: 30px;
+        transition: 0.5s;
+    }
+
+    .icon:hover{
+        transform: scale(1.2);
+    }    
+
+    .about-button{
+        background-color: transparent;
+        border: transparent
+        ;
+    }
+
+    .contact-write{
+        color: #ffffff;
     }
 }
