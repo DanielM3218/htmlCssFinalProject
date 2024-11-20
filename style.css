@@ -170,4 +170,73 @@
     .contact-write{
         color: #ffffff;
     }
+
+    .veyron-details{
+        display: flex;
+        flex-direction:column;
+        height: 80vh;
+
+    }
+
+    .veyron-picture{
+        height: 50%;
+        
+        background-color: transparent;
+        background-image: url(./veyron.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .car-details{
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .left-window{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 20%;
+    }
+
+    .right-window{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .unstyled-link {
+        height: 25%;
+        width: 100%;
+        text-decoration: none; 
+        color: inherit; 
+        display: block;
+    }
+
+    .unstyled-link:hover {
+        color: gray; /* Optional hover effect */
+    }
+
+    .car-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .car-container span {
+        margin: 10px 0 0;
+        color: #333;
+        font-size: 1rem;
+    }
+
+    .veyron{
+        height: 100%;
+        width: 100%;
+    }
 }
