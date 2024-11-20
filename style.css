@@ -7,7 +7,7 @@
 @media (max-width: 768px){
     
     .nav-container{
-        height: 7vh;
+        height: 5vh;
         width: 100vw;
         position: sticky;
         top:0;
@@ -20,6 +20,7 @@
 
     .headline{
         width: 50vw;
+        margin-left: 10px;
     }
 
     #logo{
@@ -31,6 +32,7 @@
         display: flex;
         justify-content: flex-end;
         margin-top: 5px ;
+        margin-right: 10px;
         width: 50vw;
 
     }
@@ -50,8 +52,9 @@
     }
 
     .products-container{
+        gap: 5px;
         width: 90vw;
-        height: 80vh;
+        height: 60vh;
         margin-left: 5vw;
         display: flex;
         flex-direction: column;
@@ -67,14 +70,20 @@
 
     .car-container{
         display: flex;
-        height: 20%;
+        height: 25%;
         width: 100%;
+        border-radius: 15px;
+        transition-duration: 0.5s;
+    }
+
+    .car-container:hover{
+        transform: scale(1.1);
     }
 
     .veyron-image{
         height: 100%;
         width: 20%;
-        background-color: white;
+        background-color: transparent;
         background-image: url(./veyron.jpg);
         background-position: 50%;
         background-repeat: no-repeat;
@@ -90,7 +99,7 @@
     .chiron-image{
         height: 100%;
         width: 20%;
-        background-color: white;
+        background-color: transparent;
         background-image: url(./chiron.jpg);
         background-position: 50%;
         background-repeat: no-repeat;
@@ -101,7 +110,7 @@
     .mistral-image{
         height: 100%;
         width: 20%;
-        background-color: white;
+        background-color: transparent;
         background-image: url(./mistral.jpg);
         background-position: 50%;
         background-repeat: no-repeat;
@@ -112,7 +121,7 @@
     .bolid-image{
         height: 100%;
         width: 20%;
-        background-color: white;
+        background-color: transparent;
         background-image: url(./bolide.jpeg);
         background-position: 50%;
         background-repeat: no-repeat;
@@ -121,9 +130,20 @@
     }
 
     .product-details{
-        width: 100%;
+        margin-left: 5%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    
+    hr{
+        width: 90vw;
+    }
+
+    .about-container{
+        height: 15vh;
+        width: 100vw;
+        background-color: black;
     }
 }
