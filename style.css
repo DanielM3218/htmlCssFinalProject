@@ -284,6 +284,7 @@
 
     .about-content {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 80vh;
@@ -298,6 +299,54 @@
         height: 30%;
         width: 80%;
     }
+
+    .underline-effect {
+        position: relative;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+
+    .underline-effect::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-out;
+    }
+
+
+    .underline-effect:hover::after {
+        width: 100%;
+    }
+
+    .moving-car {
+        width: 40%;
+        height: 20%;
+        background-image: url(./bugattisideview.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes mymove {
+        from {right: -30%;}
+        to {right: 30%;}
+      }
+
 
 }
 
@@ -542,74 +591,133 @@
         justify-content: space-around;
         width: 25%;
     }
-}
 
-.right-window {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
-.unstyled-link {
-    height: 25%;
-    width: 100%;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
+    .right-window {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
-/* .unstyled-link:hover {
+    .unstyled-link {
+        height: 25%;
+        width: 100%;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    /* .unstyled-link:hover {
     color: gray;
     /* Optional hover effect */
-/* } */ */
+    /* } */
+    */ .car-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
 
-.car-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
+    .car-container span {
+        margin: 10px 0 0;
+        color: #333;
+        font-size: 1rem;
+    }
 
-.car-container span {
-    margin: 10px 0 0;
-    color: #333;
-    font-size: 1rem;
-}
+    .veyron {
+        height: 100%;
+        width: 100%;
+    }
 
-.veyron {
-    height: 100%;
-    width: 100%;
-}
+    .chiron {
+        height: 100%;
+        width: 100%;
+    }
 
-.chiron {
-    height: 100%;
-    width: 100%;
-}
+    .mistral {
+        height: 100%;
+        width: 100%;
+    }
 
-.mistral {
-    height: 100%;
-    width: 100%;
-}
+    .bolide {
+        height: 100%;
+        width: 100%;
+    }
 
-.bolide {
-    height: 100%;
-    width: 100%;
-}
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
 
-.about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+    }
 
-}
 
-.inner-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 30%;
-    width: 80%;
-}
+    .inner-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 30%;
+        width: 80%;
+        /* border: rgba(255, 255, 255, 0) solid 100vh 100vw;
+        transition: width 2s, height 2s, transform 2s; */
+    }
+
+    /* .inner-about:hover{
+        width: 100%;
+        height: 100%;
+        transform: rotate(360deg);
+    } */
+
+    .underline-effect {
+        position: relative;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+
+    .underline-effect::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-out;
+    }
+
+
+    .underline-effect:hover::after {
+        width: 100%;
+    }
+
+    .moving-car {
+        width: 50%;
+        height: 25%;
+        background-image: url(./bugattisideview.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes mymove {
+        from {right: -30%;}
+        to {right: 30%;}
+      }
+
+
+
 }
