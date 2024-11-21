@@ -66,14 +66,15 @@
 
     .car-container {
         display: flex;
-        height: 25%;
-        width: 100%;
+        /* height: 25%;
+        width: 100%; */
         border-radius: 15px;
         transition-duration: 0.5s;
     }
 
     .car-container:hover {
         transform: scale(1.1);
+        opacity: 100%;
     }
 
     .veyron-image {
@@ -155,6 +156,7 @@
 
     .icon:hover {
         transform: scale(1.2);
+        cursor: pointer;
     }
 
     .about-button {
@@ -203,7 +205,7 @@
         border-radius: 15px;
     }
 
-    .bolide-picture{
+    .bolide-picture {
         height: 50%;
         background-color: transparent;
         background-image: url(./bolide.jpeg);
@@ -270,17 +272,17 @@
         width: 100%;
     }
 
-    .mistral{
+    .mistral {
         height: 100%;
         width: 100%;
     }
 
-    .bolide{
+    .bolide {
         height: 100%;
         width: 100%;
     }
 
-    .about-content{
+    .about-content {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -288,7 +290,7 @@
 
     }
 
-    .inner-about{
+    .inner-about {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -296,4 +298,318 @@
         height: 30%;
         width: 80%;
     }
+
+}
+
+/* --------------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    .nav-container {
+        height: 5vh;
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+    }
+
+    .headline {
+        width: 50vw;
+        margin-left: 10px;
+    }
+
+    #logo {
+        color: #ffffff;
+        margin-bottom: 2px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        margin-right: 10px;
+        width: 50vw;
+
+    }
+
+    .video-container {
+        width: 100%;
+        /* Full screen width */
+        height: 30%;
+        position: relative;
+        background-color: black;
+        /* Placeholder if video fails to load */
+        overflow: hidden;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .products-container {
+        gap: 5px;
+        width: 90vw;
+        height: 60vh;
+        margin-left: 5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+
+    .car-container {
+        display: flex;
+        flex-direction: column;
+        /* height: 25%;
+        width: 100%; */
+        border-radius: 15px;
+        transition-duration: 0.5s;
+    }
+
+    .car-container:hover {
+        transform: scale(1.1);
+        opacity: 100%;
+    }
+
+    .veyron-image {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        background-image: url(./veyron.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .details {
+        display: flex;
+        width: 100%;
+    }
+
+    .chiron-image {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        background-image: url(./chiron.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .mistral-image {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        background-image: url(./mistral.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .bolid-image {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        background-image: url(./bolide.jpeg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .product-details {
+        margin-left: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    hr {
+        width: 2px;
+        height: 90%;
+        background-color: #ccc;
+        border: none;
+    }
+
+
+    .contact-container {
+        display: flex;
+        height: 15vh;
+        width: 100vw;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .icon {
+        height: 30px;
+        width: 30px;
+        transition: 0.5s;
+    }
+
+    .icon:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .about-button {
+        background-color: transparent;
+        border: transparent;
+    }
+
+    .contact-write {
+        color: #ffffff;
+    }
+
+    .veyron-details {
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+        width: 94vw;
+        margin-left: 3vw;
+
+    }
+
+    .veyron-picture {
+        height: 100%;
+        width: 50%;
+        background-color: transparent;
+        background-image: url(./veyron.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .chiron-picture {
+        height: 100%;
+        width: 50%;
+        background-color: transparent;
+        background-image: url(./chiron.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .mistral-picture {
+        height: 100%;
+        width: 50%;
+        background-color: transparent;
+        background-image: url(./mistral.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .bolide-picture {
+        height: 100%;
+        width: 50%;
+        background-color: transparent;
+        background-image: url(./bolide.jpeg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+    }
+
+    .car-details {
+        height: 50%;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15%;
+        margin-left: 0%;
+    }
+
+    .left-window {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25%;
+    }
+}
+
+.right-window {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.unstyled-link {
+    height: 25%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* .unstyled-link:hover {
+    color: gray;
+    /* Optional hover effect */
+/* } */ */
+
+.car-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-container span {
+    margin: 10px 0 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.veyron {
+    height: 100%;
+    width: 100%;
+}
+
+.chiron {
+    height: 100%;
+    width: 100%;
+}
+
+.mistral {
+    height: 100%;
+    width: 100%;
+}
+
+.bolide {
+    height: 100%;
+    width: 100%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+.inner-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 80%;
+}
 }
