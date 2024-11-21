@@ -352,6 +352,25 @@
         }
     }
 
+    .contact-write{
+        font-family: Geneva, Verdana, sans-serif;
+        font-size: larger;
+    }
+
+    .span-font{
+        font-size: larger;
+    }
+
+    .span-font1{
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .span-font2{
+        font-weight: bold;
+        font-size: large;
+    }
+
 
 }
 
@@ -737,6 +756,24 @@
         }
     }
 
+    .contact-write{
+        font-family: Geneva, Verdana, sans-serif;
+        font-size: larger;
+    }
+
+    .span-font{
+        font-size: larger;
+    }
+
+    .span-font1{
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .span-font2{
+        font-weight: bold;
+        font-size: large;
+    }
 
 
 }
