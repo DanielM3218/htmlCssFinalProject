@@ -371,6 +371,32 @@
         font-size: large;
     }
 
+    .option-bar{
+        display:flex ;
+        align-items: center;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .button-select{
+
+        display: inline-block;
+        padding: 1em 2em;
+        text-align: center;
+        color: black;
+        background: white; 
+        background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%) right;
+        background-size: 200%;
+        transition: .5s ease-out;
+        border-radius: 15px;
+        border:color-mix(in hsl shorter hue, color percentage, color percentage);
+    }
+    
+    .button-select:hover{
+        color: white;
+        background-position: left;
+        background-color: black;
+    }
 
 }
 
@@ -775,5 +801,31 @@
         font-size: large;
     }
 
+    .option-bar{
+        display:flex ;
+        align-items: center;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .button-select{
+
+        display: inline-block;
+        padding: 1em 2em;
+        text-align: center;
+        color: black;
+        background: white; 
+        background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%) right;
+        background-size: 200%;
+        transition: .5s ease-out;
+        border-radius: 15px;
+        border:color-mix(in hsl shorter hue, color percentage, color percentage);
+    }
+    
+    .button-select:hover{
+        color: white;
+        background-position: left;
+        background-color: black;
+    }
 
 }
